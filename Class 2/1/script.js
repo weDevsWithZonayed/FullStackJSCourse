@@ -1,0 +1,1 @@
+var x=10;var y=20;if(x<y){console.log('x is less than y');}else{console.log('x is not less than y');}function add(a,b){return a+b;}console.log(add(5,10)); //add 5 and 10

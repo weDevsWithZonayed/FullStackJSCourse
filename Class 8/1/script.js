@@ -13,14 +13,24 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to add a task
     function addTask(task) {
       const li = document.createElement('li');
-      li.textContent = task;
+
+      const textDiv = document.createElement('div');
+      textDiv.textContent = task;
+      textDiv.classList.add('task-text');
+      li.appendChild(textDiv);
+
+      const actionDiv = document.createElement('div');
+      actionDiv.classList.add('task-actions');
+      li.appendChild(actionDiv);
   
+      // now place a delete button with its own event listener
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'Delete';
       deleteBtn.classList.add('delete-btn');
       deleteBtn.addEventListener('click', function() {
         taskList.removeChild(li);
       });
+      actionDiv.appendChild(deleteBtn);
   
       const editBtn = document.createElement('button');
       editBtn.textContent = 'Edit';
@@ -31,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
           li.firstChild.textContent = newTask;
         }
       });
+      actionDiv.appendChild(editBtn);
   
       const completeCheckbox = document.createElement('input');
       completeCheckbox.type = 'checkbox';
@@ -41,10 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
           li.classList.remove('completed');
         }
       });
+      actionDiv.appendChild(completeCheckbox);
   
-      li.appendChild(completeCheckbox);
-      li.appendChild(editBtn);
-      li.appendChild(deleteBtn);
       taskList.appendChild(li);
     }
   });

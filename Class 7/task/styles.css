@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    font-size: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+}
+
+.input {
+    outline: solid 2px burlywood;
+    margin: 2px;
+    width: 480px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: burlywood;
+    outline: solid 2px burlywood;
+    margin: 2px;
+    width: 145px;
+}
+
+#box1 {
+    background-color: #4CAF50;
+}
+
+#box2 {
+    background-color: #2196F3;
+}
+
+#box3 {
+    background-color: #f44336;
+}

@@ -1,81 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
   
-  .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-  }
+.container {
+  background-color: white;
+  border: solid 4px #000;
+  padding: 25px;
+  width: 520px;
+}
   
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
   
-  form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
   
-  input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #000;
+}
   
-  button {
-    padding: 8px 12px;
-    border: none;
-    background-color: #28a745;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-left: 10px;
-  }
+button {
+  padding: 10px 25px;
+  border: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
   
-  button:hover {
-    background-color: #218838;
-  }
+button:hover {
+  background-color: #111;
+}
   
-  ul {
-    list-style: none;
-    padding: 0;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+}
+
+.task-actions {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
   
-  li {
-    padding: 8px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-  }
+.delete-btn, .edit-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+  text-transform: uppercase;
+}
   
-  .delete-btn, .edit-btn {
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 5px 8px;
-    margin-left: 5px;
-  }
+.delete-btn:hover, .edit-btn:hover {
+  background-color: #c82333;
+}
   
-  .delete-btn:hover, .edit-btn:hover {
-    background-color: #c82333;
-  }
-  
-  .completed {
-    text-decoration: line-through;
-    color: #6c757d;
-  }
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+input[type="checkbox" i] {
+
+}

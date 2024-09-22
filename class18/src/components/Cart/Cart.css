@@ -1,0 +1,23 @@
+.cart-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cart-list {
+    list-style-type: none;
+  }
+  
+  .cart-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .remove-item-btn {
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  

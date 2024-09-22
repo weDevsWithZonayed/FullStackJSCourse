@@ -1,0 +1,6 @@
+.container {
+    max-height: 66vh;
+    overflow-y: auto;
+    border: solid 3px #fccc00;
+    border-top: 0;
+}

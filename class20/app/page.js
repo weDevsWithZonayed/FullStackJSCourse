@@ -13,9 +13,11 @@ export default async function HomePage() {
       <Header />
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {newsList.slice(0, 100).map((news) => (
-          <li key={news.id} className="border p-4 rounded">
-            <h2 className="text-2xl font-semibold">{news.title}</h2>
-            <p className="text-gray-600">{news.id}</p>
+          <li key={news.id} className="border p-4 rounded flex flex-col gap-2">
+            <h2 className="text-2xl font-semibold">
+              <span className="text-gray-600">{news.id}</span>. {news.title}
+            </h2>
+            <p>{news.body}</p>
             <Link className="text-blue-500" href={`/news/${news.id}`}>
               Read more
             </Link>
